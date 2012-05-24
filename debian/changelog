@@ -1,0 +1,11 @@
+nagios-plugins-openstack (1.20120515-2) unstable; urgency=low
+
+  * Add check_glance and check_novaapi
+
+ -- Florian Lambert <florian.lambert@enovance.com>  Thu, 24 May 2012 14:26:47 +0200
+
+nagios-plugins-openstack (1.20120515-1) unstable; urgency=low
+
+  * Initial release
+
+ -- Ignace Mouzannar <mouzannar@gmail.com>  Wed, 16 May 2012 01:29:53 +0400
