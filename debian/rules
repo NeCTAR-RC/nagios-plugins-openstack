@@ -4,5 +4,20 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
+
 %:
 	dh $@
+
+override_dh_install:
+	install    -m 0755 -o root -g root plugins/check_glance.py debian/nagios-plugins-openstack/usr/lib/nagios/plugins/check_glance
+	install    -m 0755 -o root -g root plugins/check_novaapi.py debian/nagios-plugins-openstack/usr/lib/nagios/plugins/check_novaapi
+	install    -m 0755 -o root -g root plugins/check_keystone debian/nagios-plugins-openstack/usr/lib/nagios/plugins/check_keystone
+	install    -m 0755 -o root -g root plugins/check_swift debian/nagios-plugins-openstack/usr/lib/nagios/plugins/check_swift
+	install    -m 0755 -o root -g root plugins/check_swift_dispersion debian/nagios-plugins-openstack/usr/lib/nagios/plugins/check_swift_dispersion
+	install    -m 0755 -o root -g root plugins/check_swift_object_servers debian/nagios-plugins-openstack/usr/lib/nagios/plugins/check_swift_object_servers
+	dh_install
+
+
+
+
+
