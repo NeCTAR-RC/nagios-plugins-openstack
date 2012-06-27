@@ -1,6 +1,8 @@
 nagios-plugins-openstack (1.20120627-2) unstable; urgency=low
 
   * Add missing author from copyright file: Ignace Mouzannar
+  
+  * Use .install file instead of manually installing in the debian/rules file
 
  -- Loic Dachary (OuoU) <loic@debian.org>  Wed, 27 Jun 2012 15:27:19 +0200
 
