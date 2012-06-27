@@ -1,4 +1,4 @@
-nagios-plugins-openstack (1.20120515-1) unstable; urgency=low
+nagios-plugins-openstack (1.20120627-1) unstable; urgency=low
 
   * Initial release (Closes: #675031).
 
